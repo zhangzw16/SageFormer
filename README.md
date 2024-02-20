@@ -24,7 +24,7 @@ To train and evaluate the SageFormer model:
 - Model checkpoints and logs will be saved to outputs folder
 
 ## Contacts
-For any questions, please contact the authors at `zzw20 [at] mails.tsinghua.edu.cn` or write an issue.
+For any questions, please contact the authors at `zzw20 [at] mails.tsinghua.edu.cn` or write an Discussion.
 
 ## Citation
 If you find this code or paper useful for your research, please cite:
