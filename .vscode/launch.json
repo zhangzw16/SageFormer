@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "run.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "CUDA_VISIBLE_DEVICES": "1"
+            },
+            "args": [
+                "--task_name", "long_term_forecast",
+                "--is_training", "1",
+                "--root_path", "./dataset/weather/",
+                "--data_path", "weather.csv",
+                "--model_id", "weather_96_96",
+                "--model", "SageFormer",
+                "--data", "custom",
+                "--features", "M",
+                "--seq_len", "96",
+                "--label_len", "48",
+                "--pred_len", "96",
+                "--e_layers", "2",
+                "--d_layers", "1",
+                "--factor", "3",
+                "--enc_in", "21",
+                "--dec_in", "21",
+                "--c_out", "21",
+                "--des", "Exp",
+                "--itr", "1",
+                "--n_heads", "4",
+            ]
+        }
+    ]
+}
